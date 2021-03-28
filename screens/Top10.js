@@ -5,7 +5,7 @@ import Carousel from 'react-native-snap-carousel';
 import ProgressCircle from 'react-native-progress-circle';
 import { Award } from "react-native-feather";
 
-export default CarouselScreen = ({ top }) => {
+export default Top10 = ({ top }) => {
     const GREEN_TITLE = 'Top 10 Green'
     const POLLUTED_TITLE = 'Top 10 Polluted'
     const ORIENTATION_CALLOUT = 'Slide cards or drag map \n to swap between cities'

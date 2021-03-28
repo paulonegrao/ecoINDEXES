@@ -1,26 +1,12 @@
-
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import CarouselScreen from './components/CarouselScreen';
+import { NavigationContainer } from '@react-navigation/native';
 
-export default function App() {
+import Drawer from './navigation/Drawer';
 
+export default () => {
   return (
-    <View style={styles.container}>
-
-      <CarouselScreen top={'polluted'} />
-
-      <StatusBar style="auto" />
-    </View >
+    <NavigationContainer>
+      <Drawer />
+    </NavigationContainer>
   );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+};
